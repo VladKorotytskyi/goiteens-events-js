@@ -5,6 +5,12 @@ import {
   CardTitle,
   CardText,
 } from "./PageBoard.styled";
+import { FaLocationDot } from "react-icons/fa6";
+import {
+  FaChalkboardTeacher,
+  FaCalendarAlt,
+  FaMoneyBillWave,
+} from "react-icons/fa";
 
 export const PageBoard = ({ data }) => {
   return (
@@ -14,10 +20,22 @@ export const PageBoard = ({ data }) => {
           <Card key={index}>
             <CardTitle>{name}</CardTitle>
 
-            <CardText>📍 {location}</CardText>
-            <CardText>👤 {speaker}</CardText>
-            <CardText>📅 {time.start}</CardText>
-            <CardText>⏱ {type}</CardText>
+            <CardText>
+              <FaLocationDot color="#fa6c6c" />
+              {location}
+            </CardText>
+            <CardText>
+              <FaChalkboardTeacher />
+              {speaker}
+            </CardText>
+            <CardText>
+              <FaCalendarAlt color="#ff8585" />
+              {time.start}
+            </CardText>
+            <CardText>
+              <FaMoneyBillWave color="#007e28" />
+              {type}
+            </CardText>
           </Card>
         ))}
       </CardsFlex>

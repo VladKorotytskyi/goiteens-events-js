@@ -11,7 +11,7 @@ export const CardsFlex = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 100px;
+  gap: 20px;
 `;
 
 export const Card = styled.div`
@@ -19,6 +19,8 @@ export const Card = styled.div`
   border: 2px solid #f0a36e;
   border-radius: 10px;
   padding: 16px;
+  width: 220px;
+  height: 130px;
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -34,18 +36,17 @@ export const CardText = styled.p`
   margin: 0;
   font-size: 14px;
   color: #333;
-
   display: flex;
   align-items: center;
   gap: 6px;
 `;
 export const AppTitle = styled.h1`
-    background-color: #b4d9ff;
-    border: 2px solid #4ba5ff;
-    border-radius: 5px;
-`
+  background-color: #b4d9ff;
+  border: 2px solid #4ba5ff;
+  border-radius: 5px;
+`;
 export const Wrapper = styled.div`
-    border: 2px solid gray;
-    padding: 30px;
-    background-color: white;
-`
+  border: 2px solid gray;
+  padding: 30px;
+  background-color: white;
+`;
